@@ -2,7 +2,7 @@
   <q-layout view="lhh Lpr lff">
     <q-layout-header reveal>
       <q-toolbar
-        color="primary"
+        color="bb"
         :glossy="$q.theme === 'mat'"
         :inverted="$q.theme === 'ios'"
       >
@@ -31,27 +31,42 @@
         no-border
         link
         inset-delimiter
+        separator
+        class="bg-bb"
+        color="white"
       >
-        <q-list-header>Bardiya Bakhshandeh</q-list-header>
-        <q-item @click.native="openURL('http://quasar-framework.org')">
-          <q-item-side icon="person" />
-          <q-item-main label="About" sublabel="quasar-framework.org" />
+
+        <q-list-header inset class="text-weight-bolder relative-position">
+          <img alt="Quasar logo" src="~assets/me.jpg" class=" fit round-borders absoulte-center">
+          <br>
+          Bardiya Bakhshandeh
+        </q-list-header>
+                 <!-- <router-link :to="{name: 'treasury'}">Go to Foo</router-link> -->
+
+        <q-item to="/">
+          <q-item-side icon="home" inverted />
+          <q-item-main label="Home" />
         </q-item>
-        <q-item @click.native="openURL('https://github.com/quasarframework/')">
-          <q-item-side icon="code" />
-          <q-item-main label="Skills" sublabel="github.com/quasarframework" />
+
+        <q-item @click.native="openURL('http://quasar-framework.org')">
+          <q-item-side inverted icon="person" />
+          <q-item-main label="About" />
+        </q-item>
+        <q-item to="skills">
+          <q-item-side icon="code" inverted />
+          <q-item-main label="Skills"  />
         </q-item>
         <q-item @click.native="openURL('https://discord.gg/5TDhbDg')">
           <q-item-side icon="school" />
-          <q-item-main label="Education" sublabel="https://discord.gg/5TDhbDg" />
+          <q-item-main label="Education" />
         </q-item>
-        <q-item @click.native="openURL('http://forum.quasar-framework.org')">
+        <q-item to="treasury">
           <q-item-side icon="money" />
-          <q-item-main label="Treasury" sublabel="forum.quasar-framework.org" />
+          <q-item-main label="Treasury" />
         </q-item>
         <q-item @click.native="openURL('https://twitter.com/quasarframework')">
           <q-item-side icon="mail" />
-          <q-item-main label="Contact" sublabel="@quasarframework" />
+          <q-item-main label="Contact" />
         </q-item>
       </q-list>
     </q-layout-drawer>
@@ -79,4 +94,11 @@ export default {
 </script>
 
 <style>
+/* @import '~variables' */
+/* .text-bb {
+  color: #001f3f;
+}
+.bg-bb {
+  background: #001f3f;
+} */
 </style>
