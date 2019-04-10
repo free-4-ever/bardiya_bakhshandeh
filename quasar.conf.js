@@ -12,8 +12,8 @@ module.exports = function (ctx) {
     ],
     extras: [
       ctx.theme.mat ? 'roboto-font' : null,
-      'material-icons' // optional, you are not bound to it
-      // 'ionicons',
+      'material-icons', // optional, you are not bound to it
+      'ionicons'
       // 'mdi',
       // 'fontawesome'
     ],
@@ -55,7 +55,8 @@ module.exports = function (ctx) {
         'QListHeader',
         'QItem',
         'QItemMain',
-        'QItemSide'
+        'QItemSide',
+        'QField'
       ],
       directives: [
         'Ripple'
@@ -63,8 +64,8 @@ module.exports = function (ctx) {
       // Quasar plugins
       plugins: [
         'Notify'
-      ]
-      // iconSet: ctx.theme.mat ? 'material-icons' : 'ionicons'
+      ],
+      iconSet: ctx.theme.mat ? 'material-icons' : 'ionicons'
       // i18n: 'de' // Quasar language
     },
     // animations: 'all' --- includes all animations
