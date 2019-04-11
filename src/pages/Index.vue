@@ -4,12 +4,14 @@
 
     </div>
     <div class="row">
-      <div class="col flex items-center flex flex-center">
+      <div class="col  flex-center">
         <h4 class="justify-center">I THINK, hence I DEVELOP!</h4>
         <q-btn round color="primar" text-color="primary" icon="ion-logo-twitter" size="md" push glossy />
-        <q-btn round color="primary" icon="ion-logo-facebook" size="sm" push glossy />
-        <q-btn round color="primary" icon="ion-logo-linkedin" size="sm" push glossy />
-        <q-btn @click="openURL('https://discord.gg/5TDhbDg')" round color="primar" text-color="red" icon="ion-logo-instagram" size="md" push link  />
+        <q-btn round color="primar" text-color="primary" icon="ion-logo-facebook" size="md" push glossy />
+        <q-btn round color="primay" text-color="primary" icon="ion-logo-linkedin" size="md" push glossy />
+        <q-btn @click="openURL('https://discord.gg/5TDhbDg')" round color="primar" text-color="red" icon="ion-logo-instagram" size="md" push link />
+        <q-btn round color="primay" text-color="primary" icon="ion-logo-github" size="md" push glossy />
+
       </div>
       <div class="col">
         <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
