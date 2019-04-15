@@ -70,7 +70,7 @@
           <q-item-side icon="code" color="primary" inverted />
           <q-item-main label="Skills"  />
         </q-item>
-        <q-item  clas="bg-light">
+        <q-item to="education"   clas="bg-light">
           <q-item-side icon="school" color="primary" inverted />
           <q-item-main label="Education" />
         </q-item>
